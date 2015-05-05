@@ -1,0 +1,509 @@
+<html>
+<head>
+<link
+	href='http://fonts.googleapis.com/css?family=Delius|Redressed|Courgette'
+	rel='stylesheet' type='text/css' />
+<link
+	href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css"
+	rel="stylesheet" type="text/css" />
+<link href="http://s3.amazonaws.com/zyc_service_team/Aristo/Aristo.css"
+	rel="stylesheet" type="text/css" />
+<title>8th Annual Young Adult Retreat - Registration</title>
+<style type="text/css">
+body {
+	padding: 0;
+	margin: 0;
+	font-family: "Redressed", sans-serif;
+	font-size: 1.5em;
+	color: #191970;
+}
+
+.ui-dialog .ui-dialog-title {
+	font-family: "Redressed", sans-serif;
+	font-size: 0.9em;
+	!
+	important
+	font-weight
+	:
+	bold;
+}
+
+.form-line {
+	padding-top: 12px;
+	padding-bottom: 12px;
+}
+
+textarea, .form-textbox, input[type='text'] {
+	padding: 0.5em 1em;
+	font-size: 0.75em;
+	color: #2c2cc3;
+	font-family: "Courgette", sans-serif;
+	border-radius: 0.25em;
+	border: 1px solid silver;
+	width: 100%;
+	outline: none;
+}
+
+input:focus, textarea:focus, button:focus {
+	box-shadow: 0 -1px 0 rgba(115, 185, 255, 0.3), 0 1px 2px
+		rgba(115, 185, 255, 0.1) inset, 0 0 10px rgba(115, 185, 255, 0.9);
+	!
+	important
+}
+
+.form-input {
+	padding: 0.35em 0em 0em 0em;
+}
+
+.help {
+	color: #555;
+	font-family: 'Courgette';
+	font-size: 0.6em;
+}
+
+.form-submit-button .ui-button-text {
+	font-family: "Redressed", sans-serif;
+	font-size: 1.0em;
+	!
+	important
+}
+
+label.error, .form-error-message {
+	color: red;
+}
+
+input.error {
+	border: 1px solid #ff0000;
+}
+
+.question {
+	font-size: 1.5em;
+	color: #800000;
+}
+
+.answer {
+	color: #8B4513;
+	padding: 1em 0em;
+	font-size: 0.8em;
+	font-family: 'Courgette';
+	line-height: 140%;
+}
+
+html {
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+ul {
+	list-style: none;
+}
+
+.ss-q-title {
+	display: block;
+}
+
+.ss-q-help {
+	display: block;
+	font-size: 0.8em;
+	color: #666;
+	font-style: italic;
+}
+
+.form-submit-button  .ui-button-text {
+	font-family: "Redressed", sans-serif;
+	font-size: 1.0em !important;
+}
+
+img.bg {
+	/* Set rules to fill background */
+	min-height: 100%;
+	min-width: 1024px;
+	/* Set up proportionate scaling */
+	width: 100%;
+	height: auto;
+	/* Set up positioning */
+	position: fixed;
+	top: 0;
+	left: 0;
+}
+
+@media screen and (max-width: 1024px) {
+	/* Specific to this particular image */
+	img.bg {
+		left: 50%;
+		margin-left: -512px; /* 50% */
+	}
+}
+</style>
+<script
+	src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script
+	src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>
+<script
+	src="//ajax.aspnetcdn.com/ajax/jquery.validate/1.12.0/jquery.validate.min.js"></script>
+<script src="https://www.youtube.com/iframe_api"></script>
+</head>
+<body>
+	<div
+		style="margin: auto; padding: 0em 1em; border-radius: 0 0 0.5 0.5; background: rgba(255, 255, 255, 0.6); width: 80%;">
+		<img
+			src="http://s3-us-west-1.amazonaws.com/sai-ya-region7/YARetreat2013/swami.png"
+			style="float: right;">
+		<div
+			style="color: #800000; float: left; text-align: center; margin: auto; padding: 25px 0px 0px 0px; font-size: 1.8em;">
+			<div>Life is a Challenge, Swami Our Life Coach</div>
+			<div style="font-size: 60%; padding: 5px 0px; font-style: italic">8th
+				Annual Young Adult Retreat (2014)</div>
+			<div style="font-size: 60%; padding: 20px 0px">
+				<button id="video_button">Video</button>
+			</div>
+		</div>
+		<div style="clear: both"></div>
+	</div>
+
+	<form
+		style="margin: auto; padding: 1em; border-radius: 0 0 0.5 0.5; background: rgba(255, 255, 255, 0.8); width: 80%;"
+		action="https://docs.google.com/forms/d/1DH3yjbmI5asC4FMSGseQI3gKpD-UmplcCeYNm1phVhY/formResponse"
+		method="POST" id="ss-form">
+		<div>
+			This retreat is for, by, and about the Young Adults and their
+			spiritual journey. <span class="ss-q-help" style="display: inline;">
+				(A Young Adult is someone aged 18 to 35 years of age)</span> We warmly
+			welcome SSE group 4 children. There is no cost to attend the retreat.
+			<div style="padding: 25px 0px">
+				Saturday, May 30, 9:00 AM - 4:45 PM <br> <a
+					style="color: blue; text-decoration: underline;"
+					href="https://www.google.com/maps/dir//600+Palm+Dr,+Novato,+CA+94949/@38.0575814,-122.5219844,17z/data=!4m8!4m7!1m0!1m5!1m1!1s0x8085a2bc86d43655:0xda896c8895baeced!2m2!1d-122.5198386!2d38.0575814">Unity
+					in Marin, 600 Palm Dr, Novato, CA, 94949</a>
+			</div>
+			<br />
+			<div class="errorbox-good">
+				<div class="ss-item ss-item-required ss-text">
+					<div class="ss-form-entry">
+						<label class="ss-q-title" for="entry_0">Name <span
+							class="ss-required-asterisk">*</span></label> <label class="ss-q-help"
+							for="entry_0"></label> <input type="text" name="entry.1000000"
+							value="" class="required ss-q-short" id="entry_0">
+					</div>
+				</div>
+			</div>
+			<div class="errorbox-good">
+				<div class="ss-item ss-item-required ss-text">
+					<div class="ss-form-entry">
+						<label class="ss-q-title" for="entry_0">Will you be
+							attending the YA Retreat? <span class="ss-required-asterisk">*</span>
+						</label> <label class="ss-q-help" for="entry_0"></label> <select
+							name="entry.1000004" id="entry_1000004"
+							aria-label="Will you be attending the YA Retreat?  "
+							aria-required="true" required=""><option value=""></option>
+							<option value="Yes">Yes</option>
+							<option value="No">No</option>
+							<option value="Maybe">Maybe</option></select>
+					</div>
+				</div>
+			</div>
+			<br>
+			<div class="errorbox-good">
+				<div class="ss-item ss-item-required ss-text">
+					<div class="ss-form-entry">
+						<label class="ss-q-title" for="entry_4">Email <span
+							class="ss-required-asterisk">*</span></label> <label class="ss-q-help"
+							for="entry_4"></label> <input type="text" name="entry.1000001"
+							value="" class="required email ss-q-short" id="entry_4">
+					</div>
+				</div>
+			</div>
+			<br>
+			<div class="errorbox-good">
+				<div class="ss-item ss-item-required ss-text">
+					<div class="ss-form-entry">
+						<label class="ss-q-title" for="entry_2">Phone Number <span
+							class="ss-required-asterisk">*</span></label> <label class="ss-q-help"
+							for="entry_2"></label> <input type="text" name="entry.1000002"
+							value="" class="required ss-q-short" id="entry_2">
+					</div>
+				</div>
+			</div>
+			<br>
+			<div class="errorbox-good">
+				<div class="ss-item ss-item-required ss-select">
+					<div class="ss-form-entry">
+						<label class="ss-q-title" for="entry_5">Number of Guests
+							Attending <span class="ss-required-asterisk">*</span>
+						</label> <label class="ss-q-help" for="entry_5">Including you</label> <select
+							name="entry.1000006" id="entry_1000006"
+							aria-label="Number of Guests Attending Including you "
+							aria-required="true" required=""><option value=""></option>
+							<option value=""></option>
+							<option value="1">1</option>
+							<option value="2">2</option>
+							<option value="3">3</option>
+							<option value="4">4</option>
+							<option value="5">5</option>
+							<option value="6">6</option>
+							<option value="7">7</option>
+							<option value="8">8</option>
+							<option value="9">9</option></select>
+					</div>
+				</div>
+			</div>
+			<br>
+			<div class="errorbox-good">
+				<div class="ss-item  ss-select">
+					<div class="ss-form-entry">
+						<label class="ss-q-title" for="entry_1">Which Sai Center
+							do you attend? </label> <label class="ss-q-help" for="entry_1"></label> <select
+							name="entry.1000003" id="entry_1000003"
+							aria-label="Which Sai Center do you attend?  "><option
+								value=""></option>
+							<option value="Central San Jose">Central San Jose</option>
+							<option value="Concord">Concord</option>
+							<option value="Elk Grove">Elk Grove</option>
+							<option value="Fremont">Fremont</option>
+							<option value="Fresno">Fresno</option>
+							<option value="Mt. Tam">Mt. Tam</option>
+							<option value="Modesto">Modesto</option>
+							<option value="Monterey Peninsula">Monterey Peninsula</option>
+							<option value="Nevada City">Nevada City</option>
+							<option value="Oakland">Oakland</option>
+							<option value="Peninsula">Peninsula</option>
+							<option value="Reno">Reno</option>
+							<option value="Sacramento">Sacramento</option>
+							<option value="San Bruno">San Bruno</option>
+							<option value="San Francisco">San Francisco</option>
+							<option value="San Jose">San Jose</option>
+							<option value="Santa Cruz">Santa Cruz</option>
+							<option value="Santa Rosa">Santa Rosa</option>
+							<option value="Stockton">Stockton</option>
+							<option value="Tri-Valley">Tri-Valley</option>
+							<option value="Other">Other</option></select>
+					</div>
+				</div>
+			</div>
+			<br>
+			<div class="errorbox-good">
+				<div class="ss-item  ss-paragraph-text">
+					<div class="ss-form-entry">
+						<label class="ss-q-title" for="entry_6">Names of Guest
+							coming with you.. </label> <label class="ss-q-help" for="entry_6">If
+							there are any children coming with you, please indicate the same
+							along with their age</label>
+						<textarea name="entry.1000007" rows="8" cols="0" class="ss-q-long"
+							id="entry_1000007" dir="auto"
+							aria-label="Names of Guest coming with you.. If there are any children coming with you, please indicate the same along with their age "></textarea>
+					</div>
+				</div>
+			</div>
+			<br>
+			<div class="errorbox-good">
+				<div class="ss-item  ss-radio">
+					<div class="ss-form-entry">
+						<label class="ss-q-title">Transportation for Retreat </label> <label
+							class="ss-q-help"></label>
+						<ul class="ss-choices" role="radiogroup"
+							aria-label="Transportation for Retreat  ">
+							<li class="ss-choice-item"><label><span
+									class="ss-choice-item-control goog-inline-block"><input
+										type="radio" name="entry.1000008" value="Need a ride"
+										id="group_1000008_1" role="radio" class="ss-q-radio"
+										aria-label="Need a ride"></span> <span
+									class="ss-choice-label">Need a ride</span> </label></li>
+							<li class="ss-choice-item"><label><span
+									class="ss-choice-item-control goog-inline-block"><input
+										type="radio" name="entry.1000008" value="Can give a ride"
+										id="group_1000008_2" role="radio" class="ss-q-radio"
+										aria-label="Can give a ride"></span> <span
+									class="ss-choice-label">Can give a ride</span> </label></li>
+							<li class="ss-choice-item"><label><span
+									class="ss-choice-item-control goog-inline-block"><input
+										type="radio" name="entry.1000008" value="N/A"
+										id="group_1000008_3" role="radio" class="ss-q-radio"
+										aria-label="N/A"></span> <span class="ss-choice-label">N/A</span>
+							</label></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<br>
+			<div class="errorbox-good">
+				<div class="ss-item  ss-text">
+					<div class="ss-form-entry">
+						<label class="ss-q-title" for="entry_9">City </label> <label
+							class="ss-q-help" for="entry_9">Enter the city you live
+							in</label> <input type="text" name="entry.1000009" value=""
+							class="ss-q-short" id="entry_1000009" dir="auto"
+							aria-label="City Enter the city you live in " title="">
+					</div>
+				</div>
+			</div>
+			<br>
+			<div class="errorbox-good">
+				<div class="ss-item  ss-select">
+					<div class="ss-form-entry">
+						<label class="ss-q-title" for="entry_10">Volunteer
+							Opportunities </label> <label class="ss-q-help" for="entry_10">If
+							you would like to Volunteer, please indicate the area</label> <select
+							name="entry.1000010" id="entry_1000010"
+							aria-label="Volunteer Opportunities If you would like to Volunteer, please indicate the area "><option
+								value=""></option>
+							<option value=""></option>
+							<option value="As Needed">As Needed</option>
+							<option value="Setup">Setup</option>
+							<option value="Cleanup">Cleanup</option>
+							<option value="Altar Setup">Altar Setup</option>
+							<option value="Audio Setup">Audio Setup</option></select>
+					</div>
+				</div>
+			</div>
+			<br>
+			<div class="errorbox-good">
+				<div class="ss-item  ss-select">
+					<div class="ss-form-entry">
+						<label class="ss-q-title" for="entry_11">Would you like to
+							join the sai-ya email group </label> <label class="ss-q-help"
+							for="entry_11">A forum for Young Adults living in
+							Northern California and Nevada to share ideas and information
+							about devotional activities, service projects, and other matters
+							relevant to the life, teachings, and work of Bhagavan Sri Sathya
+							Sai Baba</label> <select name="entry.1000011" id="entry_1000011"
+							aria-label="Would you like to join the sai-ya email group A forum for Young Adults living in Northern California and Nevada to share ideas and information about devotional activities, service projects, and other matters relevant to the life, teachings, and work of Bhagavan Sri Sathya Sai Baba "><option
+								value=""></option>
+							<option value="Already part of the group">Already part
+								of the group</option>
+							<option value="Yes">Yes</option>
+							<option value="No">No</option></select>
+					</div>
+				</div>
+			</div>
+			<br>
+			<div class="errorbox-good">
+				<div class="ss-item  ss-select">
+					<div class="ss-form-entry">
+						<label class="ss-q-title" for="entry_12">Please let us
+							know if you need any special accommodations or if you have any
+							additional comments </label>
+						<textarea name="entry.1256219292" rows="8" cols="0"
+							class="ss-q-long" id="entry_1256219292" dir="auto"
+							aria-label="Please let us know if you need any special accommodations or if you have any additional comments  "></textarea>
+					</div>
+				</div>
+			</div>
+			<br> <input type="hidden" name="pageNumber" value="0"> <input
+				type="hidden" name="backupCache" value=""> <input
+				type="hidden" name="submit" value="Submit">
+
+			<div class="ss-item ss-navigate">
+				<div class="ss-form-entry">
+					<div style="margin: auto; text-align: center">
+						<button type="submit" class="form-submit-button"
+							style="padding: 5px">Register!</button>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</form>
+
+	<div id="retreatvideo_dialog">
+		<div id="retreatvideo"></div>
+	</div>
+	<img src="images/bg/Bamboo_Forest_2560x1600.jpg" class="bg"
+		style="z-index: -1">
+
+
+	<script type="application/javascript">
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+    jQuery(function () {
+        var images = [
+            "Golfing-Landscape-HD-Wallpapers.jpg",
+            "hd-landscape-wallpapers-1080p-1.jpg",
+            "img.jpg",
+            "lavender_meadow-2560x1440.jpg",
+            "nature_fields_meadow_spring_2560x1600_wallpaper_Wallpaper_2560x1600_www.wallpaperswa.com.jpg",
+            "redwood-wallpaper-1280x800.jpg",
+            "tiny_bavarian_chapel_on_a_hill.jpg",
+            "tree-lined-street-summer-landscape.jpg"
+        ];
+
+        var index = parseInt (Math.random() * (images.length - 1));
+
+       $("img.bg").attr("src", "images/bg/" + images[index]);
+
+        $("form").validate({
+            submitHandler: function(form) {
+                // some other code
+                // maybe disabling submit button
+                // then:
+               form.submit();
+            }
+        });
+
+        $("#retreatvideo_dialog").dialog({
+            modal: true,
+            title: "Will you come ?",
+            width: 630,
+            height: 510,
+            buttons: {
+                Close: function () {
+                    $(this).dialog("close");
+                    player.stopVideo();
+                }
+            },
+            position: {
+                "my": "bottom",
+                "at": "top",
+                "of": $("body")
+            }
+        });
+
+        $("[type=submit]").button ().addClass ("ui-state-focus");
+
+        $("#video_button").button ().click(function () {
+            $("#retreatvideo_dialog").dialog('open');
+        })
+    });
+
+    var player;
+    function onYouTubeIframeAPIReady () {
+        player = new YT.Player('retreatvideo', {
+            height: '315',
+            width: '560',
+            videoId: 'ZmrBorr1QrE',
+            events: {
+                'onReady': onPlayerReady
+            }
+        });
+    };
+
+    function onPlayerReady(event) {
+
+    }
+
+
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	</script>
+
+</body>
+</html>
