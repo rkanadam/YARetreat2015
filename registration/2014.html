@@ -1,0 +1,293 @@
+<html>
+<head>
+    <link href='http://fonts.googleapis.com/css?family=Delius|Redressed|Courgette' rel='stylesheet' type='text/css'/>
+    <link href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" rel="stylesheet" type="text/css"/>
+    <link href="http://s3.amazonaws.com/zyc_service_team/Aristo/Aristo.css" rel="stylesheet" type="text/css"/>
+
+    <style type="text/css">
+        body {
+            padding: 0;
+            margin: 0;
+            font-family: "Redressed", sans-serif;
+            font-size: 1.5em;
+            color: #800000;
+        }
+
+        #pictureguidelines, #videoguidelines {
+            font-family: "Redressed", sans-serif;
+            font-size: 0.75em;
+        }
+
+        .ui-dialog .ui-dialog-title {
+            font-family: "Redressed", sans-serif;
+            font-size: 0.9em;
+        !important font-weight : bold;
+        }
+
+        .form-line {
+            padding-top: 12px;
+            padding-bottom: 12px;
+        }
+
+        textarea, .form-textbox, input[type='text'] {
+            padding: 0.5em 1em;
+            font-size: 0.75em;
+            color: #2c2cc3;
+            font-family: "Courgette", sans-serif;
+            border-radius: 0.25em;
+            border: 1px solid silver;
+            width: 100%;
+            outline: none;
+        }
+
+        input:focus, textarea:focus, button:focus {
+            box-shadow: 0 -1px 0 rgba(115, 185, 255, 0.3), 0 1px 2px rgba(115, 185, 255, 0.1) inset, 0 0 10px rgba(115, 185, 255, 0.9);
+        !important
+        }
+
+        .form-input {
+            padding: 0.35em 0em 0em 0em;
+        }
+
+        .help {
+            color: #555;
+            font-family: 'Courgette';
+            font-size: 0.6em;
+        }
+
+        .form-submit-button .ui-button-text {
+            font-family: "Redressed", sans-serif;
+            font-size: 1.0em;
+        !important
+        }
+
+        label.error, .form-error-message {
+            color: red;
+        }
+
+        input.error {
+            border: 1px solid #ff0000;
+        }
+
+        .question {
+            font-size: 1.5em;
+            color: #800000;
+        }
+
+        .answer {
+            color: #8B4513;
+            padding: 1em 0em;
+            font-size: 0.8em;
+            font-family: 'Courgette';
+            line-height: 140%;
+        }
+
+        img.bg {
+            /* Set up positioning */
+            width: 20%;
+            height: 800px;
+            position: fixed;
+            top: 0px;
+            left: 0px;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        .ss-q-title {
+            display: block;
+        }
+
+        .ss-q-help {
+            display: block;
+            font-size: 80%;
+            color: #444;
+            font-style: italic;
+        }
+
+        .form-submit-button  .ui-button-text {
+            font-family: "Redressed", sans-serif;
+            font-size: 1.0em !important;
+        }
+
+    </style>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>
+    <script src="//ajax.aspnetcdn.com/ajax/jquery.validate/1.12.0/jquery.validate.min.js"></script>
+    <script src="https://www.youtube.com/iframe_api"></script>
+</head>
+<body style="background:url('images/papar_texture_thumb07.jpg') ">
+</div>
+<div>
+    <div style="clear:both"></div>
+</div>
+<div style="clear:both"></div>
+<div>
+    <div style="float:left;height: 100%;width: 20%">
+        <img class="bg" src="images/animated/water_fog.gif">
+    </div>
+    <div style="float:left;width: 80%;">
+        <img src = "http://s3-us-west-1.amazonaws.com/sai-ya-region7/YARetreat2013/swami.png" style="float: right;width:30%">
+        <div style="color:#800000;float:left;text-align:center;margin:auto; padding: 75px 0px 0px 0px;font-size: 2.5em;float: left;width:70%">2014
+            Young Adult Retreat
+            <div>
+                <button id = "video_button">Video</button>
+            </div>
+        </div>
+        <div style="display: block;padding: 0px 5%;float: left">
+        <form style="" action="https://docs.google.com/spreadsheet/formResponse?formkey=dFdDYnJjUllJdjFOSmVrTWtVOTFJdEE6MA&amp;theme=0AX42CRMsmRFbUy0wYjVlZjc1Mi00ZmQ1LTQ1YTktOWUyMC05M2IxMzljNTJkOTQ&amp;ifq" method="POST" id="ss-form">
+    <div class="errorbox-good">
+        <div class="ss-item ss-item-required ss-text"><div class="ss-form-entry"><label class="ss-q-title" for="entry_0">Name
+            <span class="ss-required-asterisk">*</span></label>
+            <label class="ss-q-help" for="entry_0"></label>
+            <input type="text" name="entry.0.single" value="" class="required ss-q-short" id="entry_0"></div></div></div>
+    <br> <div class="errorbox-good">
+    <div class="ss-item ss-item-required ss-text"><div class="text ss-form-entry"><label class="ss-q-title" for="entry_4">Email
+        <span class="ss-required-asterisk">*</span></label>
+        <label class="ss-q-help" for="entry_4"></label>
+        <input type="text" name="entry.4.single" value="" class="required email ss-q-short" id="entry_4"></div></div></div>
+    <br> <div class="errorbox-good">
+    <div class="ss-item ss-item-required ss-text"><div class="ss-form-entry"><label class="ss-q-title" for="entry_2">Phone Number
+        <span class="ss-required-asterisk">*</span></label>
+        <label class="ss-q-help" for="entry_2"></label>
+        <input type="text" name="entry.2.single" value="" class="required ss-q-short" id="entry_2"></div></div></div>
+    <br> <div class="errorbox-good">
+    <div class="ss-item ss-item-required ss-checkbox"><div class="ss-form-entry"><label class="ss-q-title" for="entry_3">Will you be attending the YA Retreat?
+        <span class="ss-required-asterisk">*</span></label>
+        <label class="ss-q-help" for="entry_3"></label>
+        <ul class="ss-choices"><li class="ss-choice-item"><label class="ss-choice-label"><input type="checkbox" name="entry.3.group" value="Yes" class="ss-q-checkbox" id="group_3_1">
+            Yes</label></li> <li class="ss-choice-item"><label class="ss-choice-label"><input type="checkbox" name="entry.3.group" value="No" class="ss-q-checkbox" id="group_3_2">
+            No</label></li> <li class="ss-choice-item"><label class="ss-choice-label"><input type="checkbox" name="entry.3.group" value="Maybe" class="ss-q-checkbox" id="group_3_3">
+            Maybe</label></li>
+        </ul></div></div></div>
+    <br> <div class="errorbox-good">
+    <div class="ss-item ss-item-required ss-select"><div class="ss-form-entry"><label class="ss-q-title" for="entry_5">Number of Guests Attending
+        <span class="ss-required-asterisk">*</span></label>
+        <label class="ss-q-help" for="entry_5">Including you</label>
+        <select name="entry.5.single" id="entry_5" class="required"><option value=""></option> <option value="1">1</option> <option value="2">2</option> <option value="3">3</option> <option value="4">4</option> <option value="5">5</option> <option value="6">6</option> <option value="7">7</option> <option value="8">8</option> <option value="9">9</option></select></div></div></div>
+    <br> <div class="errorbox-good">
+    <div class="ss-item  ss-select"><div class="ss-form-entry"><label class="ss-q-title" for="entry_1">Which Sai Center do you attend?
+    </label>
+        <label class="ss-q-help" for="entry_1"></label>
+        <select name="entry.1.single" id="entry_1"><option value=""></option> <option value="Central San Jose">Central San Jose</option> <option value="Concord">Concord</option> <option value="Elk Grove">Elk Grove</option> <option value="Fremont">Fremont</option> <option value="Fresno">Fresno</option> <option value="Mt. Tam">Mt. Tam</option> <option value="Modesto">Modesto</option> <option value="Monterey Peninsula">Monterey Peninsula</option> <option value="Nevada City">Nevada City</option> <option value="Oakland">Oakland</option> <option value="Peninsula">Peninsula</option> <option value="Pleasanton">Pleasanton</option> <option value="Reno">Reno</option> <option value="Sacramento">Sacramento</option> <option value="San Bruno">San Bruno</option> <option value="San Francisco">San Francisco</option> <option value="San Jose">San Jose</option> <option value="Santa Cruz">Santa Cruz</option> <option value="Santa Rosa">Santa Rosa</option> <option value="Stockton">Stockton</option> <option value="Other">Other</option></select></div></div></div>
+    <br> <div class="errorbox-good">
+    <div class="ss-item  ss-paragraph-text"><div class="ss-form-entry"><label class="ss-q-title" for="entry_6">Names of Guest coming with you..
+    </label>
+        <label class="ss-q-help" for="entry_6">If there are any children coming with you, please indicate the same along with their age</label>
+        <textarea name="entry.6.single" rows="8" cols="75" class="ss-q-long" id="entry_6"></textarea></div></div></div>
+    <br> <div class="errorbox-good">
+    <div class="ss-item  ss-radio"><div class="ss-form-entry"><label class="ss-q-title" for="entry_8">Transportation for Retreat
+    </label>
+        <label class="ss-q-help" for="entry_8"></label>
+        <ul class="ss-choices"><li class="ss-choice-item"><label class="ss-choice-label"><input type="radio" name="entry.8.group" value="Need a ride" class="ss-q-radio" id="group_8_1">
+            Need a ride</label></li> <li class="ss-choice-item"><label class="ss-choice-label"><input type="radio" name="entry.8.group" value="Can give a ride" class="ss-q-radio" id="group_8_2">
+            Can give a ride</label></li> <li class="ss-choice-item"><label class="ss-choice-label"><input type="radio" name="entry.8.group" value="N/A" class="ss-q-radio" id="group_8_3">
+            N/A</label></li>
+        </ul></div></div></div>
+    <br> <div class="errorbox-good">
+    <div class="ss-item  ss-text"><div class="ss-form-entry"><label class="ss-q-title" for="entry_9">City
+    </label>
+        <label class="ss-q-help" for="entry_9">Enter the city you live in</label>
+        <input type="text" name="entry.9.single" value="" class="ss-q-short" id="entry_9"></div></div></div>
+    <br> <div class="errorbox-good">
+    <div class="ss-item  ss-select"><div class="ss-form-entry"><label class="ss-q-title" for="entry_10">Volunteer Opportunities
+    </label>
+        <label class="ss-q-help" for="entry_10">If you would like to Volunteer, please indicate the area</label>
+        <select name="entry.10.single" id="entry_10"><option value=""></option> <option value="Food">Food</option> <option value="Logistics">Logistics</option> <option value="Cleanup">Cleanup</option> <option value="As Needed">As Needed</option> <option value="Setup">Setup</option> <option value="Altar">Altar</option></select></div></div></div>
+    <br>
+    <input type="hidden" name="pageNumber" value="0">
+    <input type="hidden" name="backupCache" value="">
+            <input type="hidden" name="submit" value="Submit">
+
+
+    <div class="ss-item ss-navigate"><div class="ss-form-entry">
+        <div style="margin:auto;text-align: center">
+            <button type="submit" class="form-submit-button" style="padding: 5px">
+                Register!
+            </button>
+        </div>
+        </div></div></form>
+        </div>
+    </div>
+    <div style="clear:both"></div>
+</div>
+<div id  = "retreatvideo_dialog">
+    <div id = "retreatvideo"></div>
+</div>
+
+<script type="application/javascript">
+    jQuery(function () {
+       var images = [
+           "beach.gif",
+           "beach_2.gif",
+           "flower.gif",
+           "flower_water.gif",
+           "fog.gif",
+           "forest_water.gif",
+           "mountains.gif",
+           "sunrise.gif",
+           "sunrise_2.gif",
+           "water.gif",
+           "water_fog.gif",
+           "water_moss.gif"
+       ];
+
+       var index = parseInt (Math.random() * (images.length - 1));
+
+        $("img.bg").attr("src", "images/animated/" + images[index]);
+
+        $("form").validate({
+            submitHandler: function(form) {
+                // some other code
+                // maybe disabling submit button
+                // then:
+                form.submit();
+            }
+        });
+
+        $("[type=submit]").button ().addClass ("ui-state-focus");
+
+        $("#retreatvideo_dialog").dialog({
+            modal: true,
+            title: "Will you come ?",
+            width: 630,
+            height: 510,
+            buttons: {
+                Close: function () {
+                    $(this).dialog("close");
+                    //player.stopVideo();
+                }
+            },
+            position: {
+                "my": "bottom",
+                "at": "top",
+                "of": $("body")
+            }
+        });
+
+        $("#video_button").button ().click(function () {
+            player.playVideo();
+            $("#retreatvideo_dialog").dialog('open');
+        })
+    });
+
+    var player;
+    function onYouTubeIframeAPIReady () {
+        player = new YT.Player('retreatvideo', {
+            height: '315',
+            width: '560',
+            videoId: 'b6_sy39Yw0c',
+            events: {
+                'onReady': onPlayerReady,
+            }
+        });
+    };
+
+    function onPlayerReady(event) {
+        event.target.playVideo();
+    }
+
+</script>
+</body>
+</html>

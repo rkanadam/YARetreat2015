@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>ModelVersion</key>
+	<integer>300</integer>
+	<key>hasPanels</key>
+	<true/>
+	<key>imageFilterID</key>
+	<string>None</string>
+	<key>imageFilterParameter</key>
+	<real>0.5</real>
+	<key>panels</key>
+	<array>
+		<dict>
+			<key>angle</key>
+			<real>0.0</real>
+			<key>center</key>
+			<string>{167.19844, 275.52014}</string>
+			<key>size</key>
+			<string>{256.85751, 233.31412}</string>
+		</dict>
+		<dict>
+			<key>angle</key>
+			<real>0.0</real>
+			<key>center</key>
+			<string>{447.90973, 275.73883}</string>
+			<key>size</key>
+			<string>{266.99133, 233.31418}</string>
+		</dict>
+		<dict>
+			<key>angle</key>
+			<real>0.0</real>
+			<key>center</key>
+			<string>{199.62747, 578.23981}</string>
+			<key>size</key>
+			<string>{325.76825, 328.77893}</string>
+		</dict>
+		<dict>
+			<key>angle</key>
+			<real>0.0</real>
+			<key>center</key>
+			<string>{479.83209, 578.23999}</string>
+			<key>size</key>
+			<string>{197.06677, 328.77902}</string>
+		</dict>
+	</array>
+</dict>
+</plist>
